@@ -72,7 +72,7 @@ function Profile() {
 
     const fetchCertificate = async () => {
         try {
-            const response = await axios.get(`http://localhost:5001/certificate/${userId}`, { responseType: "blob" });
+            const response = await axios.get(`https://elbek-backend.onrender.com/certificate/${userId}`, { responseType: "blob" });
 
             const url = window.URL.createObjectURL(new Blob([response.data], { type: "application/pdf" }));
             setCertificateUrl(url);

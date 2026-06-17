@@ -41,7 +41,7 @@ function handleChange(e) {
         // newUser = JSON.stringify(newUser);
         try {
             setSpin(true)     
-            const response = await fetch('http://localhost:5001/users', {
+            const response = await fetch('https://elbek-backend.onrender.com/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

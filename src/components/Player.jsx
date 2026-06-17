@@ -47,7 +47,7 @@ function Player() {
     const lessonId = id; // Keyingi dars ID'si
 
     const userId = jwtDecode(localStorage.getItem('token')).userId; // Bu yerda userId olish kerak (localStorage yoki global state orqali)
-    const response = await fetch('http://localhost:5001/users', {
+    const response = await fetch('https://elbek-backend.onrender.com/users', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

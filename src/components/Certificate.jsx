@@ -16,7 +16,7 @@ const Certificate = () => {
   
           console.log("🚀 Yuborilayotgan FormData:", [...formData.entries()]); // ✅ FormData tarkibini tekshirish
   
-          const response = await fetch('http://localhost:5001/upload', {
+          const response = await fetch('https://elbek-backend.onrender.com/upload', {
               method: 'POST',
               body: formData, // JSON emas, FormData bo‘lishi kerak!
           });

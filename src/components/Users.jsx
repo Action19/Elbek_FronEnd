@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:5001/users");
+                const response = await fetch("https://elbek-backend.onrender.com/users");
 
                 if (!response.ok) {
                     throw new Error(`Server xatosi: ${response.status}`);

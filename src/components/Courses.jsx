@@ -21,7 +21,7 @@ function Courses() {
                 const decoded = jwtDecode(token);
                 const userId = decoded.userId; // `userId` token ichida bo'lishi kerak
 
-                const response = await fetch(`http://localhost:5001/users/${userId}`);
+                const response = await fetch(`https://elbek-backend.onrender.com/users/${userId}`);
 
                 if (!response.ok) {
                     throw new Error(`Server xatosi: ${response.status}`);
